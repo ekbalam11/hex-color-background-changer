@@ -18,11 +18,15 @@ function changeColor() {
     console.log('Esto es un clic');
 
 
-    document.querySelector('#btn').style.backgroundColor = generateHexColor();
+    const ranCol = document.querySelector('#btn').style.backgroundColor = generateHexColor();
+    document.querySelector(".btn").textContent = ranCol;
+    
 }
 
 
 const btn = document.querySelector('#btn');
+
+
 //2. Comprobar que se puede aplicar, haciendo que la consola muestre el mensaje al hacer clic.
 btn.onclick = changeColor;
 
